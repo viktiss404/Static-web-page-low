@@ -1,0 +1,12 @@
+Sitemap: https://creant.ru/sitemap.xml
+
+Host: https://creant.ru
+
+User-agent: Yandex
+Allow: /
+Disallow: /admin.php
+
+User-agent: *
+Allow: /
+Disallow: /admin
+

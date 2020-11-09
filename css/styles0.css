@@ -1,0 +1,22 @@
+h1 { color: #353535; }
+h2 { font-size: 1.5em; margin: 0.83em 0; }
+h3 { font-size: 1.17em; margin: 1em 0; }
+h4 { font-size: 1em; margin: 1.33em 0; }
+h5 { font-size: 0.83em; margin: 1.67em 0; }
+h6 { font-size: 0.75em; margin: 2.33em 0; }
+/* * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome. */
+/* * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome. */
+a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+a:hover, a:focus { color: #757574;; text-decoration: none; }
+p { color:   #000000; word-spacing: 1px; line-height: 25px; font-size: 14px; }
+h2 { font-size: 15px; color: #000000; text-transform: uppercase; font-weight: bold; }
+h2::after { content: " "; border: solid 2px #000000;; display: block; width: 35px; margin: 25px auto; }
+.section-padding { padding: 0px 0 0px }
+.dark-bg { background: #f3f5f8; }
+.light-bg { background-color: #fff; }
+.dark-box { background: #f3f5f8; -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4; -moz-box-shadow: 0px 3px 0px 0px #f0f2f4; box-shadow: 0px 3px 0px 0px #f0f2f4; }
+.light-box { background-color: #fff; -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4; -moz-box-shadow: 0px 3px 0px 0px #f0f2f4; box-shadow: 0px 3px 0px 0px #f0f2f4; padding: 20px 0; }
+
+.contact-details { margin: 3% 3%; }
+.contact-details h2 { font-size: 20px; }
+.contact-details h2 span { display: block; color: #000000; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-top: 5%; }

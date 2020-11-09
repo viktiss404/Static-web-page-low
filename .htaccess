@@ -1,0 +1,37 @@
+#Redirect 301 / http://www.creant.ru
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} "android|blackberry|googlebot-mobile|iemobile|ipad|iphone|ipod|opera mobile|palmos|webos" [NC]
+RewriteCond %{HTTP_REFERER} !^https:\/\/(www\.)?creant\.ru\/m\/(index.html)?$
+RewriteRule ^$ https://creant.ru/index-m.html [L,R=302]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+ 
+RewriteEngine On
+ 
+RewriteCond %{THE_REQUEST} " (/[^?/]+)\.php"
+RewriteRule ^ %1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)$ /$1.php [L]
+
+#Убираем расширение файла из URL
+RewriteRule ^(([^/]+/)*[^.]+)$ /$1.php [L]
+ 
+</IfModule>
+
+ErrorDocument 401 /error/401.php
+ErrorDocument 403 /error/403.php
+ErrorDocument 404 /er/404.php
+ErrorDocument 500 /error/500.php
+
